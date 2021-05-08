@@ -1,0 +1,77 @@
+<?php
+/**
+ * The base configuration for WordPress
+ *
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
+ *
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
+ *
+ * @package WordPress
+ */
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', '' );
+
+/** MySQL database username */
+define( 'DB_USER', '' );
+
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+
+/** MySQL hostname */
+define( 'DB_HOST', '' );
+
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         'lg+UPyqC7ntGDKKO153+tn9IkuSib5HFhJ0nSODVXBMy0LWBkmD+WrMeGE9gMXnPAxEnLHnRvf18li41hgun1A==');
+define('SECURE_AUTH_KEY',  'QZ8rIJAaU7W+MdcRvSJUP3HEW8FBkZJIiXhW44qDnMbUEWeuXeNZMYSVhr5TGgdpCmig/N/0jmsDbIpo9Ot64g==');
+define('LOGGED_IN_KEY',    'cuiPsyuEeAG989BZ2oj2LcuOKy/x1HDesw0scTz+5lHlm2kkBWFMJS2WtfT4QQfazCK2CGQ04UQekJdr4j+F8w==');
+define('NONCE_KEY',        '4MluC33KFyJUI4XxVoyi+ZUionyyu5ubchDQI7h2WcJ9cpx041RHPeMUxOUwAX90nxHro4+y7XadtI2pSOm7yQ==');
+define('AUTH_SALT',        'ztL0pXoTzzBoxLVeHwEyW4im8ti2JCPbC83SMSNhHsF2JTFkiap5Gk6F+j8nJpwFiYtBShPwsQXAJop3zFfYBQ==');
+define('SECURE_AUTH_SALT', 'pUfUDkJZo+UH0oHQk89q9VAfYugDKiHrqI0JwC1APfxJva+S6FtNtZ8XUtI9nJPmt+d0xDFN1iXXupcZ+uiWYg==');
+define('LOGGED_IN_SALT',   '5IZOlGcW+uOlYNdemQuzxY7wYN8CawbRYc+jTjq124CucfPECesE1CiC5IaNrva+5CqXSleY8tMzMZV9NX9kvg==');
+define('NONCE_SALT',       'kXmhcO0YB6Nqb7q0qcUoaFH0Sq5aSSaxBjm1+IZejJa/YYqCJdHdyTPetvuT1jECxz5/bdQP3jmTm8PFWxzdUA==');
+
+/**
+ * WordPress Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'wp_';
+
+
+
+
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';
